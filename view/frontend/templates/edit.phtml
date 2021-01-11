@@ -1,0 +1,9 @@
+<div class="container">
+	<form method='POST' action="/magento3/crud/index/save">
+	    <div class="form-group">
+	        <label for="name">Name</label>
+	        <input type="text" class="form-control" id="name" placeholder="Enter a name" name="name" value="<?php $post = $block->getPost(); echo $post->getName(); ?>">
+	    </div>
+	    <button type="submit" class="btn btn-primary" name="btne" value="<?php if (isset($post['post_id'])) echo $post->getId();?>">Submit</button>
+	</form>
+</div>
